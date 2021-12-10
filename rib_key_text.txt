@@ -1,0 +1,47 @@
+/*
+* 
+*/
+
+// http://marlot.org/util/calcul-de-la-cle-rib.php
+
+
+function toNumeric(characters) {
+
+}
+
+/*
+* To map the characters (non digit) to digit
+* Takes a single character as parameter
+* returns a digit if mappable
+*/
+
+function mapChracaters(character) {
+	/*
+	 * Characters 
+	 * A,J -> 1
+	 * B,K,S -> 2
+	 * C,L,T -> 3
+	 * D,M,U -> 4
+	 * E,N,V -> 5
+	 * F,O,W -> 6
+	 * G,P,X -> 7
+	 * H,Q,Y -> 8
+	 * I,R,Z -> 9
+	 */
+
+	switch(character) {
+		case ("A", "J"):
+			break;
+		default:
+			return character;
+	}
+}
+
+// To generate the RIB key
+function generateRIB() {
+	/*
+	 *
+	 * RIB key = 97 - ( (89*bank_code + 15*counter_code + 3*account_no) % 97)
+	 * 
+	 */
+}
